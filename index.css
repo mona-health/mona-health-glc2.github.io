@@ -172,11 +172,12 @@ body {
 }
 
 .text-block-3-copy {
-  margin-top: 25px;
   color: #fff;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  max-width: 50%;
+  margin: 25px auto 0 auto;
 }
 
 .div-block-3 {
@@ -225,7 +226,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -341,7 +342,7 @@ body {
 }
 
 .div-block-8 {
-  margin-top: 9px;
+  margin-top: 16px;
 }
 
 .text-block-7 {
