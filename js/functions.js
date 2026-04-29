@@ -146,16 +146,16 @@ function showResults(dataL, dataR) {
   } else {
     if (dataL["glc_raw"] >= threshold && dataR["glc_raw"] >= threshold) {
       document.getElementById("fullResult").innerHTML =
-        "<p id='DRTitle'>The individual should be referred for further glaucoma screening</p>";
+        "<div style='background-color: #FF3838; border-radius: 10px; padding: 8px 12px; display: inline-block;'><p id='DRTitle' style='margin: 0;'>The individual should be referred for further glaucoma screening</p></div>";
     } else if (dataL["glc_raw"] >= threshold && dataR["glc_raw"] <= threshold) {
       document.getElementById("fullResult").innerHTML =
-        "<p id='DRTitle'>The individual should be referred for further glaucoma screening</p>";
+        "<div style='background-color: #FF3838; border-radius: 10px; padding: 8px 12px; display: inline-block;'><p id='DRTitle' style='margin: 0;'>The individual should be referred for further glaucoma screening</p></div>";
     } else if (dataL["glc_raw"] <= threshold && dataR["glc_raw"] >= threshold) {
       document.getElementById("fullResult").innerHTML =
-        "<p id='DRTitle'>The individual should be referred for further glaucoma screening</p>";
+        "<div style='background-color: #FF3838; border-radius: 10px; padding: 8px 12px; display: inline-block;'><p id='DRTitle' style='margin: 0;'>The individual should be referred for further glaucoma screening</p></div>";
     } else {
       document.getElementById("fullResult").innerHTML =
-        "<p id='DRTitle'>The individual is not currently indicated for referral for further glaucoma screening; however, repeat evaluation is recommended in accordance with applicable national or local screening guidelines</p>";
+        "<div style='background-color: #A0FF85; border-radius: 10px; padding: 8px 12px; display: inline-block;'><p id='DRTitle' style='margin: 0;'>The individual is not currently indicated for referral for further glaucoma screening; however, repeat evaluation is recommended in accordance with applicable national or local screening guidelines</p></div>";
     }
   }
   // document.getElementById("fullResult").innerHTML = "Predictions for glaucoma: (L: " + unroundedL.toString() + "; R: " + unroundedR.toString() + "), everything above 0.73 should be considered referable. ";
